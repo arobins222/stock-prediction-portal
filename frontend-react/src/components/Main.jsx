@@ -6,7 +6,6 @@ import Button from './Button';
 const Main = () => {
   return (
     <>
-      <Header />
       <div className="container">
         <div className="p-5 text-center bg-light-dark rounded">
           <h1 className="text-light">Stock Prediction Portal</h1>
@@ -18,11 +17,9 @@ const Main = () => {
             widely used by stock analysts to inform trading and investment
             decisions.
           </p>
-          <Button text="Login" class="btn-outline-info" />
+          <Button text="Login" class="btn-outline-info" url="/login" />
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };
