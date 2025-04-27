@@ -10,7 +10,7 @@ const Footer = () => {
           <a className="text-light" href="mailto:arobins222@gmail.com">
             Drew Robinson
           </a>
-          .
+          . 🤑
         </p>
       </footer>
     </>
