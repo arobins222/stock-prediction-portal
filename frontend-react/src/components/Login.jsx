@@ -29,11 +29,11 @@ const Login = () => {
         'http://127.0.0.1:8000/api/v1/token/',
         userData
       );
-      localStorage.setItem('accessToken', response.data.access);
-      localStorage.setItem('refreshToken', response.data.refresh);
+      localStorage.setItem('access_token', response.data.access);
+      localStorage.setItem('refresh_token', response.data.refresh);
       console.log('Login successful');
       setIsLoggedIn(true);
-      navigate('/');
+      navigate('/dashboard');
     } catch (error) {
       setError('Invalid credentials');
       console.error('Invalid credentials');
