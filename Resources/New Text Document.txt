@@ -1,0 +1,97 @@
+(stockenv) C:\Users\User\Desktop\Web Dev\Stock Prediction Site\stock-prediction-portal\Resources>conda deactivate stockenv
+
+conda env list
+(stockenv) C:\Users\User\Desktop\Web Dev\Stock Prediction Site\stock-prediction-portal\Resources>conda deactivate
+
+C:\Users\User\Desktop\Web Dev\Stock Prediction Site\stock-prediction-portal\Resources>conda activate stockenv
+
+(stockenv) C:\Users\User\Desktop\Web Dev\Stock Prediction Site\stock-prediction-portal\Resources>
+
+
+Conda basics
+Verify conda is installed, check version number
+Update conda to the current version
+Install a package included in Anaconda
+Run a package after install, example Spyder*
+Update any installed program
+Command line help
+*Must be installed and have a deployable command,
+usually PACKAGENAME
+conda create --name py35 python=3.5
+WINDOWS: activate py35
+LINUX, macOS: source activate py35
+conda env list
+conda create --clone py35 --name py35-2
+conda list
+conda list --revisions
+conda install --revision 2
+conda list --explicit > bio-env.txt
+conda env remove --name bio-env
+WINDOWS: deactivate
+macOS, LINUX: source deactivate
+conda env create --file bio-env.txt
+conda create --name bio-env biopython
+Use conda to search for a package
+See list of all packages in Anaconda
+conda search PACKAGENAME
+https://docs.anaconda.com/anaconda/packages/pkg-docs
+Finding conda packages
+Using environments
+Create a new environment named py35, install Python 3.5
+Activate the new environment to use it
+Get a list of all my environments, active
+environment is shown with *
+Make exact copy of an environment
+List all packages and versions installed in active environment
+List the history of each change to the current environment
+Restore environment to a previous revision
+Save environment to a text file
+Delete an environment and everything in it
+Deactivate the current environment
+Create environment from a text file
+Stack commands: create a new environment, name
+it bio-env and install the biopython package
+conda create --name py34 python=3.4
+Windows: activate py34
+Linux, macOS: source activate py34
+Windows: where python
+Linux, macOS: which -a python
+python --version
+Installing and updating packages
+Install a new package (Jupyter Notebook)
+in the active environment
+Run an installed package (Jupyter Notebook)
+Install a new package (toolz) in a different environment
+(bio-env)
+Update a package in the current environment
+Install a package (boltons) from a specific channel
+(conda-forge)
+Install a package directly from PyPI into the current active
+environment using pip
+Remove one or more packages (toolz, boltons)
+from a specific environment (bio-env)
+Specifying version numbers
+Ways to specify a package version number for use with conda create or conda install commands, and in meta.yaml files.
+Constraint type Specification Result
+Fuzzy numpy=1.11 1.11.0, 1.11.1, 1.11.2, 1.11.18 etc.
+Exact numpy==1.11 1.11.0
+Greater than or equal to "numpy>=1.11" 1.11.0 or higher
+OR "numpy=1.11.1|1.11.3" 1.11.1, 1.11.3
+AND "numpy>=1.8,<2" 1.8, 1.9, not 2.0
+NOTE: Quotation marks must be used when your specification contains a space or any of these characters: > < | *
+Free Community Support
+Online Documentation
+Command Reference
+Paid Support Options
+Anaconda Onsite Training Courses
+Anaconda Consulting Services
+groups.google.com/a/continuum.io/forum/#!forum/conda
+conda.io/docs
+conda.io/docs/commands
+anaconda.com/support
+anaconda.com/training
+anaconda.com/consulting
+MORE RESOURCES
+Follow us on Twitter @anacondainc and join the #AnacondaCrew!
+Connect with other talented, like-minded data scientists and developers while
+contributing to the open source movement. Visit anaconda.com/community
